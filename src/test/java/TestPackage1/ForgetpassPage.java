@@ -15,6 +15,7 @@ public class ForgetpassPage {
 		SetUpClass sset = new SetUpClass();
 		sset.start();
 		driver = sset.getDriver();
+		
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
 		driver.findElement(By.cssSelector("form.oxd-form>div:nth-of-type(4)>p")).click();
